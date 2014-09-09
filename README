@@ -1,0 +1,22 @@
+
+####################
+#     Purpose      #
+####################
+This is a general python program to generate basis set derivatives value for a
+given list of grid points. This is designed for use in a general DFT package.
+
+Here is a list of points need attention:
+
+1  basis set order
+   the basis set order here is only for libint order (see the 
+   shell.py for more information). If you need other type 
+   of order, please modify the code in the shell.py.
+
+2  the result is in general a three dimension array:
+   phi(nCarBas,ng,nDeriv)
+   nCarBas is the number of Cartesian type of basis set for the 
+   given shell;
+   ng is the number of grid points;
+   nDeriv is the number of derivatives
+   You may need other order to organize the derivatives, please
+   modify the derivorder.py
